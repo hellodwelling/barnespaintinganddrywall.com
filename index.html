@@ -538,19 +538,19 @@
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                   
                                                     <a
-                                                        href=" gallery-Interior-Painting "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <p class="mt-1 text-sm text-gray-500">Interior Painting</p>
-                                                    </a>
-                                                 
-                                                    <a
                                                         href=" gallery-Exterior-Painting "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
                                                         <p class="mt-1 text-sm text-gray-500">Exterior Painting</p>
+                                                    </a>
+                                                 
+                                                    <a
+                                                        href=" gallery-Interior-Painting "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <p class="mt-1 text-sm text-gray-500">Interior Painting</p>
                                                     </a>
                                                  
                                                     <a
@@ -797,12 +797,12 @@
                                     >
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             
-                                                <a href="gallery-Interior-Painting" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <p class="mt-1 text-sm text-gray-500">Interior Painting</p>
-                                                </a>
-                                            
                                                 <a href="gallery-Exterior-Painting" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <p class="mt-1 text-sm text-gray-500">Exterior Painting</p>
+                                                </a>
+                                            
+                                                <a href="gallery-Interior-Painting" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <p class="mt-1 text-sm text-gray-500">Interior Painting</p>
                                                 </a>
                                             
                                                 <a href="gallery-All" role="menuitem" class="block p-3 -m-3 transition rounded-md">
@@ -954,7 +954,7 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 6,
+        amountOfImages: 5,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
@@ -976,7 +976,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/47402e2d-6523-48c8-abef-704e2a017c3c.png"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/785439b6-a89e-4122-94e8-8c0dfb10efad.jpeg"
                     alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
                 />
             
@@ -995,7 +995,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5d0c4df4-5c1a-4a42-9e7c-64788813d57e.png"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/47c79bb8-8dbe-4beb-96fe-e56c86e63600.png"
                     alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
                 />
             
@@ -1014,7 +1014,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/f8e2be2a-72e1-40a5-9da6-2693643c68e9.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6c343a30-bb51-4536-8d48-74af86424723.png"
                     alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
                 />
             
@@ -1033,7 +1033,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/817a63d1-01b6-4b4d-8610-ad3b7400a0d7.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7d09e7fc-13e1-4675-b137-aeb345339ca3.png"
                     alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
                 />
             
@@ -1052,26 +1052,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/dd2531eb-e4fd-4a42-b4db-f54303f1183b.jpeg"
-                    alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
-                />
-            
-        </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 6"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            
-                <img
-                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/87f1847d-5b57-45cf-ba99-df271128ba59.png"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7ad0b6be-dfda-4293-bd22-ae12ecadfafd.png"
                     alt="Painting company Barnes Painting and Drywall, LLC in Deerfield Beach, FL"
                 />
             
@@ -1599,7 +1580,7 @@
                             
                             <img
                                 class="object-cover grayscale"
-                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7b5c1953-8d03-4e87-9e66-ea3360289be4.jpeg" alt="Our TV Mounting Service offers a professional, affordable way to mount your television. We have a variety of mounting options to choose from, and our experts will help you find the perfect mounting solution for your home. for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"
+                    src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b099969f-08fd-4807-9ef9-9d4b0b940fd8.jpeg" alt="Our TV Mounting Service offers a professional, affordable way to mount your television. We have a variety of mounting options to choose from, and our experts will help you find the perfect mounting solution for your home. for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"
                                 alt=""
                             />
                             
@@ -1904,7 +1885,7 @@
                     <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/75ded713-80ce-49dc-bd5d-c1063a649067.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0ed6cec9-b580-44d1-a1ee-28a7b67701bf.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                             
                         </div>
 
@@ -1921,7 +1902,7 @@
                     <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0ed6cec9-b580-44d1-a1ee-28a7b67701bf.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/75ded713-80ce-49dc-bd5d-c1063a649067.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                             
                         </div>
 
@@ -2040,7 +2021,7 @@
                     <button @click="activeImage = 16; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3e09be54-4c05-43ec-a428-b1f894e3a6e0.jpeg" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3ab02a7e-e218-4dac-8b6f-0189374eb7d7.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                             
                         </div>
 
@@ -2057,7 +2038,7 @@
                     <button @click="activeImage = 17; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3ab02a7e-e218-4dac-8b6f-0189374eb7d7.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3e09be54-4c05-43ec-a428-b1f894e3a6e0.jpeg" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                             
                         </div>
 
@@ -2765,14 +2746,14 @@
                                 
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/75ded713-80ce-49dc-bd5d-c1063a649067.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0ed6cec9-b580-44d1-a1ee-28a7b67701bf.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0ed6cec9-b580-44d1-a1ee-28a7b67701bf.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/75ded713-80ce-49dc-bd5d-c1063a649067.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2821,14 +2802,14 @@
                                 
                                     <li class="flex flex-col" x-show="activeImage === 16">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3e09be54-4c05-43ec-a428-b1f894e3a6e0.jpeg" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3ab02a7e-e218-4dac-8b6f-0189374eb7d7.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 17">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3ab02a7e-e218-4dac-8b6f-0189374eb7d7.png" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3e09be54-4c05-43ec-a428-b1f894e3a6e0.jpeg" alt="Exterior Painting for Barnes Painting and Drywall, LLC in Deerfield Beach, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -3810,7 +3791,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="89255"
+                                aria-controls="89276"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -3829,7 +3810,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89255">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89276">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1 754-364-5157. Thanks!</p>
                         </dd>
@@ -3841,7 +3822,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="89256"
+                                aria-controls="89277"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -3860,7 +3841,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89256">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89277">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -3872,7 +3853,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="89257"
+                                aria-controls="89278"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -3891,7 +3872,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89257">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="89278">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -4413,68 +4394,68 @@ observer.observe(target)
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258432"
-                                                    name="258432"
+                                                    id="contact-service-258474"
+                                                    name="258474"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Painting"
                                             />
-                                            <label for="contact-label-service-258432" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                            <label for="contact-label-service-258474" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258433"
-                                                    name="258433"
+                                                    id="contact-service-258475"
+                                                    name="258475"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Painting"
                                             />
-                                            <label for="contact-label-service-258433" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                            <label for="contact-label-service-258475" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258434"
-                                                    name="258434"
+                                                    id="contact-service-258476"
+                                                    name="258476"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-258434" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-258476" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258435"
-                                                    name="258435"
+                                                    id="contact-service-258477"
+                                                    name="258477"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-258435" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-258477" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258436"
-                                                    name="258436"
+                                                    id="contact-service-258478"
+                                                    name="258478"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall and Plastering"
                                             />
-                                            <label for="contact-label-service-258436" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                            <label for="contact-label-service-258478" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258437"
-                                                    name="258437"
+                                                    id="contact-service-258479"
+                                                    name="258479"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="TV Mounting"
                                             />
-                                            <label for="contact-label-service-258437" class="ml-3 text-sm font-medium text-gray-700">TV Mounting</label>
+                                            <label for="contact-label-service-258479" class="ml-3 text-sm font-medium text-gray-700">TV Mounting</label>
                                         </div>
                                         
                                     </div>
@@ -4503,68 +4484,68 @@ observer.observe(target)
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258432"
-                                                    name="258432"
+                                                    id="contact-service-258474"
+                                                    name="258474"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Painting"
                                             />
-                                            <label for="contact-label-service-258432" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                            <label for="contact-label-service-258474" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258433"
-                                                    name="258433"
+                                                    id="contact-service-258475"
+                                                    name="258475"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Painting"
                                             />
-                                            <label for="contact-label-service-258433" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                            <label for="contact-label-service-258475" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258434"
-                                                    name="258434"
+                                                    id="contact-service-258476"
+                                                    name="258476"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-258434" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-258476" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258435"
-                                                    name="258435"
+                                                    id="contact-service-258477"
+                                                    name="258477"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-258435" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-258477" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258436"
-                                                    name="258436"
+                                                    id="contact-service-258478"
+                                                    name="258478"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall and Plastering"
                                             />
-                                            <label for="contact-label-service-258436" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                            <label for="contact-label-service-258478" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-258437"
-                                                    name="258437"
+                                                    id="contact-service-258479"
+                                                    name="258479"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="TV Mounting"
                                             />
-                                            <label for="contact-label-service-258437" class="ml-3 text-sm font-medium text-gray-700">TV Mounting</label>
+                                            <label for="contact-label-service-258479" class="ml-3 text-sm font-medium text-gray-700">TV Mounting</label>
                                         </div>
                                         
                                     </div>
