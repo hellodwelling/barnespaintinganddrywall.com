@@ -1,1 +1,3 @@
-disallow: /index
+User-agent: *
+Disallow: 
+Sitemap: https://barnespaintinganddrywall.com/sitemap.xml
